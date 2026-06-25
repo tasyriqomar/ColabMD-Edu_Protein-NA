@@ -1,0 +1,39 @@
+[ molecule ]
+ZGR
+
+[ martini ]
+R1 C1 C2 R2 R3
+
+[ mapping ]
+charmm36
+
+[ atoms ]
+1	     O1   R1
+2	     O2   C1
+3	     O3   C2
+4	     C1   R2
+5	     C2   R2
+6	     C3   C2
+7	     C4   R1
+8	     C5   R3
+9	     C6   R1
+10	     C7   C2
+11	     C8   R3
+12	     C9   C1
+13	    C10   C2
+14	    C11   R1
+15	     H1   R2
+16	     H2   R2
+17	     H3   C2
+18	     H4   C2
+19	     H5   R1
+20	     H6   R3
+21	     H7   R3
+22	     H8   C2
+23	     H9   C2
+24	    H10   C2
+25	    H11   C1
+26	    H12   R1
+27	    H13   R1
+28	    H14   R1
+

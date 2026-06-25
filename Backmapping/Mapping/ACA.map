@@ -1,0 +1,42 @@
+[ molecule ]
+ACA
+
+[ martini ]
+C1 C2 C3 R1 R2 R3
+
+[ mapping ]
+charmm36
+
+[ atoms ]
+1	   C1  C1
+2	   C2  C1
+3	   O1  C1
+4	   O2  C1
+5	   C3  R1
+6	   C4  R1
+7	   C5  R2
+8	   C6  R2
+9	   C7  R3
+10	   C8  R3
+11	   C9  C3
+12	  C10  C3
+13	  C11  C3
+14	   O3  C3
+15	  C12  C2
+16	   O4  C2
+17	  C13  C2
+18	   H1  C1
+19	   H2  C1
+20	   H3  C1
+21	   H4  R1
+22	   H5  R2
+23	   H6  R3
+24	   H7  R3
+25	   H8  C3
+26	   H9  C3
+27	  H10  C3
+28	  H11  C3
+29	  H12  C2
+30	  H13  C2
+31	  H14  C2
+
