@@ -1,0 +1,53 @@
+[ molecule ]
+CIP
+
+[ martini ]
+R1 R2 C1 R3 R4 R5 R6 R7 R8 R9
+
+[ mapping ]
+charmm36
+
+[ atoms ]
+1	 C1  R8
+2	 C2  R8
+3	 C3  R8
+4	 N1  R6
+5	 C4  R6
+6	 C5  R2
+7	 C6  R2
+8	 O1  R2
+9	 C7  R9
+10	 C8  R9
+11	 C9  R1
+12	 C10 R1
+13	 C11 R7
+14	 C12 R7
+15	 N2  R4
+16	 C13 R5
+17	 C14 R5
+18	 N3  R3
+19	 C15 R3
+20	 C16 R4
+21	 F   R1
+22	 C17 C1
+23	 O2  C1
+24	 O3  C1
+25	 H1  R8
+26	 H2  R8
+27	 H3  R8
+28	 H4  R8
+29	 H5  R8
+30	 H6  R6
+31	 H7  R9
+32	 H8  R7
+33	 H9  R5
+34	 H10 R5
+35	 H11 R5
+36	 H12 R5
+37	 H13 R3
+38	 H14 R3
+39	 H15 R3
+40	 H16 R4
+41	 H17 R4
+42	 H18 C1
+

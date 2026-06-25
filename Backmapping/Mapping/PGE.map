@@ -1,0 +1,68 @@
+[ molecule ]
+PGE
+
+[ martini ]
+R1 R2 C1 C2 C3 C4
+
+[ mapping ]
+charmm36
+
+[ atoms ]
+1	   C1   C1
+2	   C2   C1
+3	   C3   C1
+4	   C4   C1
+5	   C5   C2
+6	   C6   C2
+7	   C7   C2
+8	   C8   C2
+9	   C9   R1
+10	  C10   R2
+11	  C11   R2
+12	  C12   R1
+13	   O1   R1
+14	  C13   R1
+15	  C14   C3
+16	  C15   C3
+17	  C16   C3
+18	  C17   C3
+19	  C18   C4
+20	  C19   C4
+21	  C20   C4
+22	   O2   C4
+23	   O3   C4
+24	   O4   R2
+25	   O5   C2
+26	   H1   C1
+27	   H2   C1
+28	   H3   C1
+29	   H4   C1
+30	   H5   C1
+31	   H6   C1
+32	   H7   C1
+33	   H8   C1
+34	   H9   C1
+35	  H10   C2
+36	  H11   C2
+37	  H12   C2
+38	  H13   C2
+39	  H14   C2
+40	  H15   R1
+41	  H16   R2
+42	  H17   R2
+43	  H18   R2
+44	  H19   R1
+45	  H20   C3
+46	  H21   C3
+47	  H22   C3
+48	  H23   C3
+49	  H24   C3
+50	  H25   C3
+51	  H26   C4
+52	  H27   C4
+53	  H28   C4
+54	  H29   C4
+55	  H30   C4
+56	  H31   R2
+57	  H32   C2
+

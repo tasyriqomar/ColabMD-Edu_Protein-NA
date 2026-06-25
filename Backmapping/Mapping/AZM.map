@@ -1,0 +1,50 @@
+[ molecule ]
+AZM
+
+[ martini ]
+CG1 CG2 CG3 CG4 CG5 CG6 CG7 CG8 CG9 CG10 CG11 CG12
+
+[ mapping ]
+charmm36
+
+[ atoms ]
+1	 O1    CG1
+2	 C1    CG1
+3	 C2    CG1
+4	 N1    CG2
+5	 O2    CG2
+6	 O3    CG2
+7	 C3    CG3
+8	 C4    CG3
+9	 C5    CG12
+10	 C6    CG8
+11	 N2    CG8
+12	 C7    CG4
+13	 C8    CG4
+14	 C9    CG5
+15	 N3    CG5
+16	C10    CG6
+17	C11    CG6
+18	C12    CG7
+19	C13    CG7
+20	C14    CG9
+21	C15    CG9
+22	 N4    CG10
+23	C16    CG10
+24	C17    CG11
+25	C18    CG11
+26	 N5    CG8
+27	C19    CG12
+28	 H1    CG1
+29	 H2    CG3
+30	 H3    CG3
+31	 H4    CG4
+32	 H5    CG6
+33	 H6    CG7
+34	 H7    CG7
+35	 H8    CG9
+36	 H9    CG11
+37	H10    CG8
+38	H11    CG12
+
+

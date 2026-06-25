@@ -1,0 +1,69 @@
+[ molecule ]
+OHT
+
+[ martini ]
+CG1 CG2 CG3 CG4 CG5 CG6 CG7 CG8 CG9 CG10 CG11 CG12
+
+[ mapping ]
+charmm36
+
+[ atoms ]
+1	 C1    CG4
+2	 C2    CG4
+3	 C3    CG4
+4	 C4    CG4
+5	 C5    CG5
+6	 C6    CG5
+7	 C7    CG6
+8	 C8    CG6
+9	 C9    CG7
+10	C10    CG7
+11	C11    CG8
+12	C12    CG9
+13	C13    CG9
+14	C14    CG10
+15	C15    CG10
+16	C16    CG8
+17	 O1    CG3
+18	C17    CG3
+19	C18    CG3
+20	  N    CG2
+21	C19    CG2
+22	C20    CG2
+23	C21    CG11
+24	C22    CG12
+25	C23    CG12
+26	C24    CG1
+27	C25    CG1
+28	C26    CG11
+29	 O2    CG1
+30	 H1    CG4
+31	 H2    CG4
+32	 H3    CG4
+33	 H4    CG4
+34	 H5    CG4
+35	 H6    CG5
+36	 H7    CG6
+37	 H8    CG6
+38	 H9    CG10
+39	H10    CG10
+40	H11    CG9
+41	H12    CG9
+42	H13    CG10
+43	H14    CG8
+44	H15    CG3
+45	H16    CG3
+46	H17    CG3
+47	H18    CG3
+48	H19    CG2
+49	H20    CG2
+50	H21    CG2
+51	H22    CG2
+52	H23    CG2
+53	H24    CG2
+54	H25    CG12
+55	H26    CG12
+56	H27    CG1
+57	H28    CG11
+58	H29    CG1
+
