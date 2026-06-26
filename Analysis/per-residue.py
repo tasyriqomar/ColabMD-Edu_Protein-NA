@@ -78,7 +78,7 @@ def generate_decomposition_plot(csv_file, output_png, output_csv):
 
 if __name__ == "__main__":
     # REVISION 2: Hardcoded absolute Google Drive paths for your Protein-Ligand workspace
-    base_dir = "/content/drive/MyDrive/ColabMD-Edu_Protein-Ligand/Analysis/MMGBSA/"
+    base_dir = "/content/drive/MyDrive/ColabMD-Edu_Protein-NA/Analysis/MMGBSA/"
     
     target_csv = os.path.join(base_dir, "FINAL_DECOMP_MMPBSA.csv") 
     output_image = os.path.join(base_dir, "mmpbsa_decomposition_chart.png")
