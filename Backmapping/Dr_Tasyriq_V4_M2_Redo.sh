@@ -18,7 +18,7 @@ for input in "${loop_values[@]}"; do
 cd /home/pjjauh05/Desktop/Hands-on/backward-v5/"$input"ns
 
 gmx trjconv -f dynamic_fitted.xtc -s dynamic.tpr -n index.ndx -o trj_"$input"ns.gro -dump "$input"000 <<EOF
-1
+18
 EOF
 
 ./initram-v5.sh -f trj_"$input"ns.gro -o aa_"$input"ns.gro -to charmm36 -p topol.top
