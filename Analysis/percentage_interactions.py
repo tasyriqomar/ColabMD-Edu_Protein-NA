@@ -68,7 +68,7 @@ def save_percentage_table(percentages, output_path):
 
 if __name__ == "__main__":
     # Absolute paths pointing directly to your active Protein-Ligand workspace
-    base_dir = "/content/drive/MyDrive/ColabMD-Edu_Protein-Ligand/Analysis/split_pdbs/"
+    base_dir = "/content/drive/MyDrive/ColabMD-Edu_Protein-NA/Analysis/split_pdbs/"
     json_file = os.path.join(base_dir, "extracted_data.json")
     output_img = os.path.join(base_dir, "interaction_percentages.png")
     
