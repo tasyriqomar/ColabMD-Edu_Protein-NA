@@ -73,7 +73,7 @@ def plot_interactions(interaction_counts, output_path):
 
 if __name__ == "__main__":
     # REVISION 2: Updated Google Drive directory path to Protein-Ligand project folder
-    base_dir = "/content/drive/MyDrive/ColabMD-Edu_Protein-Ligand/Analysis/split_pdbs/"
+    base_dir = "/content/drive/MyDrive/ColabMD-Edu_Protein-NA/Analysis/split_pdbs/"
     
     json_file = os.path.join(base_dir, "extracted_data.json")
     output_img = os.path.join(base_dir, "interaction_summary_plot.png")
