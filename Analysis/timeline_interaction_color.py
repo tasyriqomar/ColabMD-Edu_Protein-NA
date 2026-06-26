@@ -48,7 +48,7 @@ def create_timeline(frames, csv_files):
 # Main function
 def main():
     # REVISION 2: Updated absolute path to point to your Protein-Ligand project directory
-    base_dir = "/content/drive/MyDrive/ColabMD-Edu_Protein-Ligand/Analysis/split_pdbs/"
+    base_dir = "/content/drive/MyDrive/ColabMD-Edu_Protein-NA/Analysis/split_pdbs/"
     bond_csv_folder = os.path.join(base_dir, "bond_csv_files")
     
     if not os.path.exists(bond_csv_folder):
