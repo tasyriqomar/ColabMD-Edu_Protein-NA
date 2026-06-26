@@ -1,5 +1,5 @@
 # 1. Navigate to your directory
-cd "/content/drive/MyDrive/ColabMD-Edu_Protein-Ligand/Analysis/split_pdbs/"
+cd "/content/drive/MyDrive/ColabMD-Edu_Protein-NA/Analysis/split_pdbs/"
 
 # 2. Loop through every PDB file
 for pdb in pdb_*.pdb; do
