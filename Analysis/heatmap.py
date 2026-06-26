@@ -86,7 +86,7 @@ def generate_decomposition_heatmap(csv_file, output_png, num_frames=11, num_resi
 
 if __name__ == "__main__":
     # REVISION 2: Configured path routing for your absolute Google Drive workspace
-    base_dir = "/content/drive/MyDrive/ColabMD-Edu_Protein-Ligand/Analysis/MMGBSA/"
+    base_dir = "/content/drive/MyDrive/ColabMD-Edu_Protein-NA/Analysis/MMGBSA/"
     
     target_csv = os.path.join(base_dir, "FINAL_DECOMP_MMPBSA.csv")
     output_img = os.path.join(base_dir, "mmpbsa_heatmap_results.png")
