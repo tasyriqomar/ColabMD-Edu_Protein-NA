@@ -90,7 +90,7 @@ def save_chain_plot(chain_data, chain_id, output_dir):
 
 if __name__ == "__main__":
     # REVISION 2: Path updated to point to the Protein-Ligand project directory
-    base_dir = "/content/drive/MyDrive/ColabMD-Edu_Protein-Ligand/Analysis/split_pdbs/"
+    base_dir = "/content/drive/MyDrive/ColabMD-Edu_Protein-NA/Analysis/split_pdbs/"
     
     json_file = os.path.join(base_dir, "extracted_data.json")
     output_dir = os.path.join(base_dir, 'chain_analysis_results')
