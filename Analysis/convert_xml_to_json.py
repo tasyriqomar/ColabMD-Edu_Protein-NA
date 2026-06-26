@@ -4,7 +4,7 @@ import glob
 import xml.etree.ElementTree as ET
 
 # 1. Define your Google Drive Path
-target_dir = "/content/drive/MyDrive/ColabMD-Edu_Protein-Ligand/Analysis/split_pdbs/"
+target_dir = "/content/drive/MyDrive/ColabMD-Edu_Protein-NA/Analysis/split_pdbs/"
 
 data = {}
 
