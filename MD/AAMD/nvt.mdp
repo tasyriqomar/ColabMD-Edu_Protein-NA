@@ -1,26 +1,48 @@
-; NVT equilibration
-integrator      = md
-dt              = 0.002
-nsteps          = 50000         ; 100 ps
+; ==============================================================================
+; NVT Equilibration (100 ps, 1 fs timestep for stability)
+; ==============================================================================
+define                  = -DPOSRES      ; Restrain DNA/RNA heavy atoms
 
-nstxout         = 500
-nstvout         = 500
-nstenergy       = 500
-nstlog          = 500
+integrator              = md
+dt                      = 0.001         ; 1 fs (prevents LINCS distortion during heating)
+nsteps                  = 100000        ; 100 ps
 
-tcoupl          = V-rescale
-tc-grps         = DNA Water_and_ions
-tau_t           = 0.1 0.1
-ref_t           = 300 300
+; Output control
+nstlog                  = 2000          ; Every 2 ps
+nstenergy               = 2000          ; Every 2 ps
+nstxout-compressed      = 10000         ; Every 10 ps
+compressed-x-grps       = System
 
-constraints     = h-bonds
-continuation    = no
+; Constraints
+continuation            = no
+constraint_algorithm   = lincs
+constraints             = h-bonds
+lincs_iter              = 2             ; Enhanced accuracy
+lincs_order             = 6             ; Enhanced stability
 
-cutoff-scheme   = Verlet
-ns_type         = grid
-nstlist         = 10
-rcoulomb        = 1.0
-rvdw            = 1.0
-coulombtype     = PME
-pbc             = xyz
+; Nonbonded parameters
+cutoff-scheme           = Verlet
+nstlist                 = 20
+rlist                   = 1.0
+rcoulomb                = 1.0
+rvdw                    = 1.0
+coulombtype             = PME
+pbc                     = xyz
+DispCorr                = EnerPres
 
+; Temperature coupling
+tcoupl                  = V-rescale
+tc-grps                 = System
+tau_t                   = 0.1
+ref_t                   = 300
+
+; Pressure coupling
+pcoupl                  = no
+
+; Center of mass motion removal (None when using position restraints)
+comm-mode               = None
+
+; Velocity generation
+gen_vel                 = yes
+gen_temp                = 300
+gen_seed                = -1
