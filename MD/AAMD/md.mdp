@@ -1,32 +1,55 @@
-; Production MD relaxation
-integrator      = md
-dt              = 0.002
-nsteps          = 500000       ; 1 ns
+; ==============================================================================
+; Production Molecular Dynamics (Free Relaxation)
+; ==============================================================================
 
-nstxout         = 1000
-nstvout         = 1000
-nstenergy       = 1000
-nstlog          = 1000
+; Run parameters
+integrator              = md
+dt                      = 0.002             ; 2 fs
+nsteps                  = 500000            ; 1.0 ns (increase as desired, e.g. 5000000 for 10 ns)
 
-tcoupl          = V-rescale
-tc-grps         = DNA Water_and_ions
-tau_t           = 0.1 0.1
-ref_t           = 300 300
+; Output control (high-performance compressed trajectory)
+nstlog                  = 5000              ; Write log every 10 ps
+nstenergy               = 5000              ; Write energy terms every 10 ps
+nstxout                 = 0                 ; Omit heavy uncompressed coordinates
+nstvout                 = 0                 ; Omit full velocities
+nstfout                 = 0                 ; Omit forces
+nstxout-compressed      = 5000              ; Write compressed .xtc every 10 ps
+compressed-x-grps       = System
 
-pcoupl          = Parrinello-Rahman
-pcoupltype      = isotropic
-tau_p           = 2.0
-ref_p           = 1.0
-compressibility = 4.5e-5
+; Constraints
+continuation            = yes               ; Continuing from NPT equilibration
+constraint_algorithm   = lincs
+constraints             = h-bonds
+lincs_iter              = 1
+lincs_order             = 4
 
-constraints     = h-bonds
-continuation    = yes
+; Nonbonded interactions
+cutoff-scheme           = Verlet
+nstlist                 = 20
+rlist                   = 1.0
+rcoulomb                = 1.0
+rvdw                    = 1.0
+coulombtype             = PME
+pbc                     = xyz
+DispCorr                = EnerPres          ; Long-range vdW corrections for energy & pressure
 
-cutoff-scheme   = Verlet
-ns_type         = grid
-nstlist         = 10
-rcoulomb        = 1.0
-rvdw            = 1.0
-coulombtype     = PME
-pbc             = xyz
+; Temperature coupling (Separate solute and solvent to prevent thermal imbalance)
+tcoupl                  = V-rescale
+tc-grps                 = System
+tau_t                   = 0.1
+ref_t                   = 300
 
+; Pressure coupling
+pcoupl                  = Parrinello-Rahman ; Appropriate now that the box is equilibrated
+pcoupltype              = isotropic
+tau_p                   = 2.0
+ref_p                   = 1.0
+compressibility         = 4.5e-5
+
+; Center of mass motion removal
+comm-mode               = Linear            ; Remove translational drift of the free system
+nstcomm                 = 100
+comm-grps               = System
+
+; Velocity generation
+gen_vel                 = no                ; Retain velocities from NPT checkpoint
