@@ -1,32 +1,52 @@
-; NPT equilibration
-integrator      = md
-dt              = 0.002
-nsteps          = 250000        ; 500 ps
+; ==============================================================================
+; NPT Equilibration for RNA Aptamer
+; ==============================================================================
+define                  = -DPOSRES          ; Restrain DNA/RNA heavy atoms
 
-nstxout         = 500
-nstvout         = 500
-nstenergy       = 500
-nstlog          = 500
+; Run parameters
+integrator              = md
+dt                      = 0.002             ; 2 fs
+nsteps                  = 250000            ; 500 ps
 
-tcoupl          = V-rescale
-tc-grps         = DNA Water_and_ions
-tau_t           = 0.1 0.1
-ref_t           = 300 300
+; Output control (lean, high-performance I/O)
+nstlog                  = 2500              ; Write log every 5 ps
+nstenergy               = 2500              ; Write energies every 5 ps
+nstxout-compressed      = 5000              ; Write compressed xtc every 10 ps
+compressed-x-grps       = System
 
-pcoupl          = Parrinello-Rahman
-pcoupltype      = isotropic
-tau_p           = 2.0
-ref_p           = 1.0
-compressibility = 4.5e-5
+; Constraints
+continuation            = yes               ; Continuing from NVT
+constraint_algorithm   = lincs
+constraints             = h-bonds
+lincs_iter              = 1
+lincs_order             = 4
 
-constraints     = h-bonds
-continuation    = yes
+; Nonbonded parameters
+cutoff-scheme           = Verlet
+nstlist                 = 20
+rlist                   = 1.0
+rcoulomb                = 1.0
+rvdw                    = 1.0
+coulombtype             = PME
+pbc                     = xyz
+DispCorr                = EnerPres          ; Crucial for correct density at 1 bar
 
-cutoff-scheme   = Verlet
-ns_type         = grid
-nstlist         = 10
-rcoulomb        = 1.0
-rvdw            = 1.0
-coulombtype     = PME
-pbc             = xyz
+; Temperature coupling
+tcoupl                  = V-rescale
+tc-grps                 = System
+tau_t                   = 0.1
+ref_t                   = 300
 
+; Pressure coupling (C-rescale for stable equilibration)
+pcoupl                  = C-rescale         ; Or Parrinello-Rahman if required by protocol
+pcoupltype              = isotropic
+tau_p                   = 2.0
+ref_p                   = 1.0
+compressibility         = 4.5e-5
+refcoord-scaling        = com               ; Scale restraint coordinates with the box
+
+; Center of mass motion removal
+comm-mode               = None              ; Must be None when position restraints are active
+
+; Velocity generation
+gen_vel                 = no                ; Velocities read from NVT checkpoint
