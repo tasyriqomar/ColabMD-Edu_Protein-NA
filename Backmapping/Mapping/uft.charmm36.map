@@ -1,0 +1,30 @@
+[ molecule ]
+UFT
+
+[ martini ]
+BB1 BB2 BB3 SC1 SC2 SC3
+
+[ mapping ]
+charmm36
+
+[ atoms ]
+1   P     BB1
+2   OP1   BB1
+3   OP2   BB1
+4   O5'   BB1 BB2
+5   C5'   BB2
+6   C4'   BB2
+7   O4'   BB2 BB3
+8   C3'   BB2 BB3
+9   O3'   BB3
+10  C2'   BB3
+11  F2'   BB3
+12  C1'   BB3
+13  N1    SC1
+14  C2    SC1
+15  O2    SC1
+16  N3    SC2
+17  C4    SC2
+18  O4    SC2
+19  C5    SC3
+20  C6    SC3
