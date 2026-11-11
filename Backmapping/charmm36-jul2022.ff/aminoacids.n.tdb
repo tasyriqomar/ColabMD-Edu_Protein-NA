@@ -1,21 +1,6 @@
 ; CHARMM-port for GROMACS
 ; Termini database from the CHARMM force field
 
-[ GLY-NH3+ ]
-; Glycine N-terminus
-[ delete ]
- HN
- HT1
- HN1
- HT2
- HN2
-[ replace ]
-N      NH3       14.007000  -0.3000
-CA     CT2       12.011000   0.1300
-[ add ]
-3   4   H     N      CA     C     
-  HC         1.008000   0.3300  -1
-
 [ NH3+ ]
 ; standard N-terminus
 [ delete ]
@@ -28,6 +13,21 @@ CA     CT2       12.011000   0.1300
 N      NH3       14.007000  -0.3000
 CA     CT1       12.011000   0.2100
 HA     HB1        1.008000   0.1000
+[ add ]
+3   4   H     N      CA     C     
+  HC         1.008000   0.3300  -1
+
+[ GLY-NH3+ ]
+; Glycine N-terminus
+[ delete ]
+ HN
+ HT1
+ HN1
+ HT2
+ HN2
+[ replace ]
+N      NH3       14.007000  -0.3000
+CA     CT2       12.011000   0.1300
 [ add ]
 3   4   H     N      CA     C     
   HC         1.008000   0.3300  -1
@@ -47,38 +47,6 @@ CA     CP1       12.011000   0.1600
 [ add ]
 2   6   HN    N      CA     CD    
   HC         1.008000   0.2400  -1
-
-[ GLY-NH2 ]
-; neutral N-terminal glycine; charges from LSN
-[ delete ]
- HN
- H3
- HN1
- H2
- H1
- HN2
-[ replace ]
-N      NH2       14.007000  -0.9600
-CA     CT2       12.011000   0.1000
-[ add ]
-2   4   HT    N      CA     C     
-  H          1.008000   0.3400  -1
-
-[ NH2 ]
-; neutral N-terminus; charges from LSN
-[ delete ]
- HN
- HT1
- H3
- HN1
- HT2
- HN2
-[ replace ]
-N      NH2       14.007000  -0.9600
-CA     CT1       12.011000   0.1900
-[ add ]
-2   4   H     N      CA     C     
-  H          1.008000   0.3400  -1
 
 [ None ]
 ; Empty, do-nothing terminus
