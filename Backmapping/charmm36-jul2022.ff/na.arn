@@ -1,0 +1,6 @@
+; atom renaming specification for nucleic acids
+; residue  gromacs   forcefield
+*          OP1       O1P
+*          OP2       O2P
+*          H5'1      H5'
+*          H5'2      H5''
