@@ -3,13 +3,11 @@ CFZ     RNA
 UFT     RNA
 UMS     RNA
 ADS     RNA
-
 ; Standard RNA nucleotides
 A       RNA
 C       RNA
 G       RNA
 U       RNA
-
 ; Deoxy/DNA aliases in aptamer chain
 DA      RNA
 DC      RNA
