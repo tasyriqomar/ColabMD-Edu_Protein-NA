@@ -6078,3 +6078,295 @@
   [ impropers ]
        C2    N1    N3    O2
        C4    N3    C5    O4
+
+[ CFZ ]
+; 2'-deoxy-2'-fluorocytidine
+ [ atoms ]
+       P     ON2    1.5000   0
+     O1P     ON3   -0.7800   0
+     O2P     ON3   -0.7800   0
+     O5'     ON2   -0.5700   0
+     C5'    CN8B   -0.0800   0
+     H5'     HN8    0.0900   0
+    H5''     HN8    0.0900   0
+     C4'     CN7    0.1600   1
+     H4'     HN7    0.0900   1
+     O4'    ON6B   -0.5000   1
+     C1'    CN7B    0.1600   1
+     H1'     HN7    0.0900   1
+      N1     NN2   -0.1300   2
+      C6     CN3    0.0500   2
+      H6     HN3    0.1700   2
+      C5     CN3   -0.1300   2
+      H5     HN3    0.0700   2
+      C2     CN1    0.5200   2
+      O2    ON1C   -0.4900   2
+      N3     NN3   -0.6600   2
+      C4     CN2    0.6500   2
+      N4     NN1   -0.7500   2
+     H41     HN1    0.3700   2
+     H42     HN1    0.3300   2
+     C2'     CN7    0.2800   3
+     H2'     HN7    0.0900   3
+     F2'    FGA1   -0.2500   3
+     C3'     CN7    0.0100   4
+     H3'     HN7    0.0900   4
+     O3'     ON2   -0.5700   4
+ [ bonds ]
+       P    O1P
+       P    O2P
+       P    O5'
+     O5'    C5'
+     C5'    C4'
+     C4'    O4'
+     C4'    C3'
+     O4'    C1'
+     C1'     N1
+     C1'    C2'
+      N1     C2
+      N1     C6
+      C2     N3
+      C4     N4
+      N4    H41
+      N4    H42
+      C4     C5
+     C2'    C3'
+     C3'    O3'
+     O3'     +P
+     C2'    H2'
+     C2'    F2'
+     C1'    H1'
+     C3'    H3'
+     C4'    H4'
+     C5'    H5'
+     C5'   H5''
+      C5     H5
+      C6     H6
+      C2     O2
+      C5     C6
+      N3     C4
+ [ impropers ]
+      C2     N1     N3     O2
+      C4     N3     C5     N4
+      N4     C4    H41    H42
+
+[ UFT ]
+; 2'-deoxy-2'-fluorouridine
+ [ atoms ]
+       P     ON2    1.5000   0
+     O1P     ON3   -0.7800   0
+     O2P     ON3   -0.7800   0
+     O5'     ON2   -0.5700   0
+     C5'    CN8B   -0.0800   0
+     H5'     HN8    0.0900   0
+    H5''     HN8    0.0900   0
+     C4'     CN7    0.1600   1
+     H4'     HN7    0.0900   1
+     O4'    ON6B   -0.5000   1
+     C1'    CN7B    0.1600   1
+     H1'     HN7    0.0900   1
+      N1    NN2B   -0.3400   2
+      C6     CN3    0.2000   2
+      H6     HN3    0.1400   2
+      C2    CN1T    0.5500   2
+      O2     ON1   -0.4500   2
+      N3    NN2U   -0.4600   2
+      H3     HN2    0.3600   2
+      C4     CN1    0.5300   2
+      O4     ON1   -0.4800   2
+      C5     CN3   -0.1500   2
+      H5     HN3    0.1000   2
+     C2'     CN7    0.2800   3
+     H2'     HN7    0.0900   3
+     F2'    FGA1   -0.2500   3
+     C3'     CN7    0.0100   4
+     H3'     HN7    0.0900   4
+     O3'     ON2   -0.5700   4
+ [ bonds ]
+       P    O1P
+       P    O2P
+       P    O5'
+     O5'    C5'
+     C5'    C4'
+     C4'    O4'
+     C4'    C3'
+     O4'    C1'
+     C1'     N1
+     C1'    C2'
+      N1     C2
+      N1     C6
+      C2     N3
+      N3     H3
+      N3     C4
+      C4     C5
+     C2'    C3'
+     C3'    O3'
+     O3'     +P
+     C2'    H2'
+     C2'    F2'
+     C1'    H1'
+     C3'    H3'
+     C4'    H4'
+     C5'    H5'
+     C5'   H5''
+      C5     H5
+      C6     H6
+      C2     O2
+      C4     O4
+      C5     C6
+ [ impropers ]
+      C2     N1     N3     O2
+      C4     N3     C5     O4
+
+[ UMS ]
+; 2'-deoxy-2'-methylselenyl-uridine
+ [ atoms ]
+       P     ON2    1.5000   0
+     O1P     ON3   -0.7800   0
+     O2P     ON3   -0.7800   0
+     O5'     ON2   -0.5700   0
+     C5'    CN8B   -0.0800   0
+     H5'     HN8    0.0900   0
+    H5''     HN8    0.0900   0
+     C4'     CN7    0.1600   1
+     H4'     HN7    0.0900   1
+     O4'    ON6B   -0.5000   1
+     C1'    CN7B    0.1600   1
+     H1'     HN7    0.0900   1
+      N1    NN2B   -0.3400   2
+      C6     CN3    0.2000   2
+      H6     HN3    0.1400   2
+      C2    CN1T    0.5500   2
+      O2     ON1   -0.4500   2
+      N3    NN2U   -0.4600   2
+      H3     HN2    0.3600   2
+      C4     CN1    0.5300   2
+      O4     ON1   -0.4800   2
+      C5     CN3   -0.1500   2
+      H5     HN3    0.1000   2
+     C2'     CN7    0.1400   3
+     H2'     HN7    0.0900   3
+    SE2'      SE   -0.1000   3
+     CA'     CN9   -0.1100   3
+    HA'1     HN9    0.0900   3
+    HA'2     HN9    0.0900   3
+    HA'3     HN9    0.0900   3
+     C3'     CN7    0.0100   4
+     H3'     HN7    0.0900   4
+     O3'     ON2   -0.5700   4
+ [ bonds ]
+       P    O1P
+       P    O2P
+       P    O5'
+     O5'    C5'
+     C5'    C4'
+     C4'    O4'
+     C4'    C3'
+     O4'    C1'
+     C1'     N1
+     C1'    C2'
+      N1     C2
+      N1     C6
+      C2     N3
+      N3     H3
+      N3     C4
+      C4     C5
+     C2'    C3'
+     C3'    O3'
+     O3'     +P
+     C2'    H2'
+     C2'   SE2'
+    SE2'    CA'
+     CA'   HA'1
+     CA'   HA'2
+     CA'   HA'3
+     C1'    H1'
+     C3'    H3'
+     C4'    H4'
+     C5'    H5'
+     C5'   H5''
+      C5     H5
+      C6     H6
+      C2     O2
+      C4     O4
+      C5     C6
+ [ impropers ]
+      C2     N1     N3     O2
+      C4     N3     C5     O4
+
+[ ADS ]
+; Adenosine-5'-phosphorodithioate
+ [ atoms ]
+       P     ON2    1.5000   0
+     S2P     SN3   -0.7800   0
+     S3P     SN3   -0.7800   0
+     O5'     ON2   -0.5700   0
+     C5'    CN8B   -0.0800   0
+     H5'     HN8    0.0900   0
+    H5''     HN8    0.0900   0
+     C4'     CN7    0.1600   1
+     H4'     HN7    0.0900   1
+     O4'    ON6B   -0.5000   1
+     C1'    CN7B    0.1600   1
+     H1'     HN7    0.0900   1
+      N9     NN2   -0.0500   2
+      C5     CN5    0.2800   2
+      N7     NN4   -0.7100   2
+      C8     CN4    0.3400   2
+      H8     HN3    0.1200   2
+      N1    NN3A   -0.7400   2
+      C2     CN4    0.5000   2
+      H2     HN3    0.1300   2
+      N3    NN3A   -0.7500   2
+      C4     CN5    0.4300   2
+      C6     CN2    0.4600   2
+      N6     NN1   -0.7700   2
+     H61     HN1    0.3800   2
+     H62     HN1    0.3800   2
+     C2'    CN7B    0.1400   3
+    H2''     HN7    0.0900   3
+     O2'     ON5   -0.6600   3
+     H2'     HN5    0.4300   3
+     C3'     CN7    0.0100   4
+     H3'     HN7    0.0900   4
+     O3'     ON2   -0.5700   4
+ [ bonds ]
+       P    S2P
+       P    S3P
+       P    O5'
+     O5'    C5'
+     C5'    C4'
+     C4'    O4'
+     C4'    C3'
+     O4'    C1'
+     C1'     N9
+     C1'    C2'
+      N9     C4
+      N9     C8
+      C4     N3
+      C2     N1
+      C6     N6
+      N6    H61
+      N6    H62
+      C6     C5
+      C5     N7
+     C2'    C3'
+     C2'    O2'
+     O2'    H2'
+     C3'    O3'
+     O3'     +P
+     C1'    H1'
+     C2'   H2''
+     C3'    H3'
+     C4'    H4'
+     C5'    H5'
+     C5'   H5''
+      C8     H8
+      C2     H2
+      N1     C6
+      C2     N3
+      C4     C5
+      N7     C8
+ [ impropers ]
+      N6     C6    H61    H62
+      C6     N1     C5     N6
