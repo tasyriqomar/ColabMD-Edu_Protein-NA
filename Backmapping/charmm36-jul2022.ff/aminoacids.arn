@@ -1,5 +1,3 @@
 ; atom renaming specification
 ; residue gromacs    forcefield
 *          H          HN        
-*          OXT        OT2
-*          O          OT1
