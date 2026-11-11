@@ -1,15 +1,5 @@
 ; CHARMM-port for GROMACS
-; created with charmm2gmx version 0.7.dev45+g7b82040.d20221208 on 2022-12-08 10:52:46.362483
-; Code: https://gitlab.com/awacha/charmm2gmx
-; Documentation: https://awacha.gitlab.com/charmm2gmx
-; Charmm2GMX written by András Wacha, based on the original port by 
-; E. Prabhu Raman, Justin A. Lemkul, Robert Best and Alexander D. MacKerell, Jr.
 ; Termini database from the CHARMM force field
-
-[ None ]
-; Empty, do-nothing terminus
-
-; residue topologies from file toppar_c36_jul22/top_all36_prot.rtf
 
 [ GLY-NH3+ ]
 ; Glycine N-terminus
@@ -89,3 +79,6 @@ CA     CT1       12.011000   0.1900
 [ add ]
 2   4   H     N      CA     C     
   H          1.008000   0.3400  -1
+
+[ None ]
+; Empty, do-nothing terminus
