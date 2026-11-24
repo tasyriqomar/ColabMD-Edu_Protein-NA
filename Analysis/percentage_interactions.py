@@ -42,7 +42,7 @@ def save_percentage_table(percentages, output_path):
     ax.axis('off')
     
     # Title optimized for your fxn protein-ligand system
-    plt.title('Protein-Ligand (fxn) Interaction Share Summary', fontsize=14, pad=10, fontweight='bold')
+    plt.title('Protein-Aptamer Interaction Share Summary', fontsize=14, pad=10, fontweight='bold')
     
     table_data = [["Interaction Type", "Percentage Share"]]
     
