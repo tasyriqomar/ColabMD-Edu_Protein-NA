@@ -77,7 +77,7 @@ def save_chain_plot(chain_data, chain_id, output_dir):
     plt.ylabel('Interaction Frequency (Across Frames)', fontweight='bold')
     
     # REVISION 1: Title customized to display ligand (fxn) context
-    plt.title(f'Top Interacting Residues: Chain {chain_id} ↔ Ligand (fxn)', fontsize=14, pad=15)
+    plt.title(f'Top Interacting Residues: Chain {chain_id} ↔ Aptamer', fontsize=14, pad=15, fontweight='bold')
     
     plt.xticks(rotation=45, ha="right")
     plt.grid(axis='y', linestyle='--', alpha=0.3)
