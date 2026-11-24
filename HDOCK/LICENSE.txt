@@ -1,0 +1,32 @@
+HDOCKlite License Agreement
+
+
+HDOCKlite is a softare package for ab initio protein-protein and protein-RNA/DNA docking 
+using the intrinsic scoring functions for protein-protein and protein-RNA interactions 
+based on a hierarchical algorithm.
+
+Copyright © 2015-2025 Sheng-You Huang and Huazhong University of Science and Technology
+
+
+++++++++++++++++++++++
+Academic License
+++++++++++++++++++++++
+
+HDOCKlite is free for academic or non-commercial users. 
+
+Users who use HDOCKlite for non-commercial purposes should agree the following terms.
+
+a. Use HDOCKlite for non-commercial purposes only.
+b. Don't redistribute HDOCKlite outside of their group or laboratory.
+c. Cite the HDOCKlite study/paper where they use it.
+d. The software is released as is, and no warranty is provided. 
+
+If you have any questions regarding HDOCKlite, please contact us at huangsy@hust.edu.cn.
+
+
+++++++++++++++++++++++
+Commercial License
+++++++++++++++++++++++
+
+For commercial license of HDOCKlite, users should contact us at huangsy@hust.edu.cn.
+
