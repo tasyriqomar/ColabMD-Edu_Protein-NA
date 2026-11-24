@@ -60,7 +60,7 @@ def plot_interactions(interaction_counts, output_path):
     plt.ylabel('Total Occurrences (All Frames)', fontweight='bold')
     
     # REVISION 1: Updated Title for Protein-Ligand (fxn)
-    plt.title('Protein-Ligand (fxn) Interaction Profile Summary', fontsize=14, pad=20)
+    plt.title('Protein-Aptamer Interaction Profile Summary', fontsize=14, pad=20)
     
     plt.xticks(rotation=30, ha="right")
     plt.grid(axis='y', linestyle='--', alpha=0.6)
