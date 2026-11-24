@@ -99,7 +99,7 @@ def main():
     plt.ylabel('Interaction Type Presence Count', fontweight='bold')
     
     # REVISION 3: Title customized for ligand analysis
-    plt.title('Protein-Ligand (fxn) Non-Bonded Interaction Timeline', fontsize=14, pad=15, fontweight='bold')
+    plt.title('Protein-Aptamer Interaction Timeline', fontsize=14, pad=15, fontweight='bold')
     
     plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left', title="Interaction Types")
     plt.grid(True, axis='y', linestyle='--', alpha=0.4)
